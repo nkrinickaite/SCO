@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif; 
+  color: #000000;
+}
+.navbar {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #000000;
+  text-decoration: none;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.content {
+  max-width: 90.2%;
+  margin:10px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px; 
+}
+.home {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+  justify-content: space-between; 
+  gap: 20px; 
+}
+.help-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 30px;
+
+}
+
+.help-button {
+  background-color: #9f0000; 
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 15px 30px; 
+  border-radius: 12px; 
+  font-size: 20px; 
+  cursor: pointer;
+  text-align: center;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.pay-button {
+  background-color: #426B1F; 
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 15px 30px; 
+  border-radius: 12px; 
+  font-size: 25px; 
+  cursor: pointer;
+  text-align: center;
+  width: 400px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.help-image {
+  width: 100px; 
+  height: auto;
+  margin-top: 10px; 
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row; 
+  gap: 10px; 
+  justify-content: flex-start; 
+  align-items: center; 
+  width: 100%; 
+}
+
+.frame-button,
+.extra-button {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.frame-button {
+  width: 127px; 
+  height: 127px; 
+  background-image: url('/public/frame.png'); 
+}
+.extra-button {
+  width: 263px; 
+  height: 127px;
+  background-color: #fdfdf6;
+  border: 1px solid #e5e5e5;
+  font-size: 18px;
+  font-weight:600;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+  background-color: #fdfdf6;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 16px;
+  width:369px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000; 
+  margin: 0;
+}
+
+.checkbox-input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left:170px;
+}
+
+.search-button,
+.code-button,
+.quantity-button {
+  width: 126px;
+  height: 90px;
+  background-color: #fdfdf6;
+  border: 1px solid #e5e5e5;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+} 
+
+.code-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%; 
+}
+
+.code-input {
+  width: 368px;
+  height: 47px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.keypad-button.apply {
+  background-color: #dff0d8;
+  color: #3c763d;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid #d6e9c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  width: 100%; 
+}
+
+.keypad-button {
+  width: 100%;
+  height: 40px;
+  background-color: #fdfdf6;
+  border: 1px solid #e5e5e5;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.keypad-button.clear {
+  background-color: #f2dede;
+  color: #a94442;
+  font-weight: bold;
+}
+
+
+.blog-container {
+  max-height: 350px; 
+  overflow-y: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.blog-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: nowrap; 
+  gap: 16px; 
+}
+
+.blog-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #fdfdf6;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width:700px;
+}
+
+.blog-text {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  gap: 4px; 
+  align-items: flex-start;
+}
+
+.blog-preview h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.price-per-kg {
+  color: #426B1F; 
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.weight-badge {
+  display: inline-block;
+  background-color: #fff; 
+  border: 1px solid #e5e5e5; 
+  border-radius: 12px; 
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000; 
+  margin-top: 4px;
+  white-space: nowrap; 
+  width: fit-content; 
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; 
+  padding-left: 16px; 
+}
+.total-container {
+  position: absolute;
+  bottom: 20px; 
+  left: 62px;
+  right: 485px;
+  background-color: #fdfdf6;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 10px 16px;
+  height: 48px; 
+}
+
+.total-display {
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  font-size: 25px;
+  color: #000000; 
+  font-weight: bold; 
+}
+
+.total-price {
+  margin-left: auto; 
+  font-weight: bold;
+  color: #000;
+  font-size: 25px; 
+}
+
+
+.links {
+  display: flex;
+  gap: 8px; 
+}
+
+.flag-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px; 
+  height: 45px; 
+  color: white;
+  font-weight: bold;
+  font-size: 25px; 
+  -webkit-text-stroke: 0.9px black; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px; 
+  text-decoration: none; 
+}
+
+.flag-button.en {
+  background-image: url('/public/Flag_EN.png');
+}
+
+.flag-button.ukr {
+  background-image: url('/public/Flag_UKR.png');
+}
